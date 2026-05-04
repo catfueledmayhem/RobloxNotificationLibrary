@@ -24,7 +24,7 @@ function library:CreateNotification(title, body, typeOf)
 	Notification.Parent = NekoLolis
 	Notification.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 	Notification.BorderSizePixel = 0
-	Notification.Position = UDim2.new(1.1, 0,0.778, 0)
+	Notification.Position = UDim2.new(1.1, 0,0.1, 0)
 	Notification.Size = UDim2.new(0.225181594, 0, 0.168128654, 0)
 
 	UICorner.CornerRadius = UDim.new(0.0500000007, 0)
