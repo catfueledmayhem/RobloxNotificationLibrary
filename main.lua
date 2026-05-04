@@ -92,9 +92,9 @@ function library:CreateNotification(title, body, typeOf)
 		Images:FindFirstChild(typeOf).Visible = true
 		spawn(function()
             	   local frame = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("NekoLolis").Notification
-            	   frame:TweenPosition(UDim2.new(0.774, 0,0.778, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 1.5)
+            	   frame:TweenPosition(UDim2.new(0.774, 0,0.1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 1.5)
             	   wait(5)
-            	   frame:TweenPosition(UDim2.new(1.1, 0,0.778, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 1.5)
+            	   frame:TweenPosition(UDim2.new(1.1, 0,0.1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 1.5)
             	   wait(1.6)
             	   game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("NekoLolis"):Destroy()
 		end)
