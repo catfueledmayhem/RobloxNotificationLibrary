@@ -1,7 +1,7 @@
 local library = {}
 local types = {"error", "success", "info"}
 
-function library:CreateNotification(title, body, typeOf)
+function library:CreateNotification(title, body, typeOf, bodyimage)
 	if game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("NekoLolis") then
 		game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("NekoLolis"):Destroy()
 	end
@@ -41,6 +41,14 @@ function library:CreateNotification(title, body, typeOf)
 	BodyText.TextSize = 33.000
 	BodyText.TextScaled = true
 	BodyText.Text = body
+	
+	BodyImage.Name = "BodyImage"
+	BodyImage.Parent = Notification
+	BodyImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	BodyImage.BackgroundTransparency = 1.000
+	BodyImage.Position = UDim2.new(0.031, 0,0.226, 0)
+	BodyImage.Size = UDim2.new(0.945, 0,0.687, 0)
+	BodyImage.Image = bodyimage or "rbxassetid://2300836754"
 
 	TitleText.Name = "TitleText"
 	TitleText.Parent = Notification
