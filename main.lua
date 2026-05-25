@@ -50,7 +50,8 @@ function library:CreateNotification(title, body, typeOf, bodyimage)
 	BodyImage.Position = UDim2.new(0.031, 0,0.226, 0)
 	BodyImage.Size = UDim2.new(0.945, 0,0.687, 0)
 	BodyImage.Image = bodyimage or "rbxassetid://2300836754"
-
+	BodyImage.ScaleType = Enum.ScaleType.Fit
+	
 	TitleText.Name = "TitleText"
 	TitleText.Parent = Notification
 	TitleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
