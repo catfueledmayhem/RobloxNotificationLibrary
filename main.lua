@@ -112,5 +112,9 @@ function library:CreateNotification(title, body, typeOf, bodyimage)
 	
 	return library
 end
-
+if identifyexecutor() == "Xeno" then
+	library:CreateNotification("your executor sucks", "bro uses xeno", "info", "")
+elseif identifyexecutor() == "Solara" then
+	library:CreateNotification("your executor sucks", "bro uses solara", "info", "")
+end
 return library
