@@ -112,5 +112,4 @@ function library:CreateNotification(title, body, typeOf, bodyimage)
 	
 	return library
 end
-library:CreateNotification("please", "tell atp to unban me", "info", "")
 return library
